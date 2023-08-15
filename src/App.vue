@@ -1,30 +1,22 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view/>
 </template>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  // text-align: center;
   color: #2c3e50;
 }
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+:root:root{
+  // 这个在手册中NavBar中底下显示
+  --van-nav-bar-background-color:#42bd56;
+  --van-nav-bar-title-text-color:#fff;
+  --van-nav-bar-icon-color:#fff;
+  // api中cell底部
+  --van-cell-right-icon-color:#1ebc2a;
+  --van-cell-value-color:#1ebc2a;
 }
 </style>
